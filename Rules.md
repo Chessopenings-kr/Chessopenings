@@ -35,9 +35,10 @@ TYPE/BRANCH_NAME
 ```
 - By default, the name of the Branch follows the name of the corresponding Issue.
 - TYPE should be selected from the following options to match the type of the Issue:
-  - dev: General development matters
-  - fix: Issues related to modifying existing development content
-  - doc: Matters related to documentation, such as README and rules
+  - Feat: When adding a new feature.
+  - Fix: When fixing a bug or an issue.
+  - Merge: When integrating changes from different branches.
+  - Refactor: When restructuring the code without changing its external behavior.
 - BRANCH\_NAME should be an appropriate modification of the Title of the corresponding Issue.
 
 #### Branch Example
@@ -60,9 +61,10 @@ doc/convention-documentation
 [TYPE] TITLE
 ```
 - TYPE should be selected from the following options:
-  - DEV: General development matters
-  - FIX: Issues related to modifying existing development content
-  - DOC: Matters related to documentation, such as README
+  - Feat: When adding a new feature.
+  - Fix: When fixing a bug or an issue.
+  - Merge: When integrating changes from different branches.
+  - Refactor: When restructuring the code without changing its external behavior.
 
 ####  Content
 ```markdown
