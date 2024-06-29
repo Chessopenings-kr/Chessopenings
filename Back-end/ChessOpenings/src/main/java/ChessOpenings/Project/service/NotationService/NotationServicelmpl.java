@@ -8,6 +8,7 @@ import jakarta.transaction.Transactional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -23,6 +24,12 @@ public class NotationServicelmpl implements NotationService{
 
     NotationRepository notationRepository;
     ClosureRepository closureRepository;
+
+    @Autowired
+    public NotationServicelmpl(NotationRepository notationRepository, ClosureRepository closureRepository) {
+        this.notationRepository = notationRepository;
+        this.closureRepository = closureRepository;
+    }
 
     @Override
     public List<Notation> getChildsById(Long id) {
