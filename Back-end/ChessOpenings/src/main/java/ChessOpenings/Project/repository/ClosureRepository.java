@@ -11,5 +11,5 @@ public interface ClosureRepository extends JpaRepository<Closure, CompositeKey> 
     List<Closure> findAllByAncestor(Long id);
 
     // 모든 부모 closure 찾기
-    List<Closure> findAllByDescendant(Long id);
+    Closure findByDescendant(Long id);
 }
